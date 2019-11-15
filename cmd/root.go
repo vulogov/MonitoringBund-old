@@ -26,10 +26,24 @@ func Execute() {
 }
 
 func init() {
+  hostname, err := os.Hostname()
+  if err !=  nil {
+    panic(err)
+  }
 	cobra.OnInitialize(initConfig)
-
 	rootCmd.PersistentFlags().StringVar(&bctx.CfgFile, "config", "", "config file (default is $HOME/.zabbix-bund)")
-	rootCmd.PersistentFlags().StringVarP(&bctx.Logverbose, "verbose", "v", "info", "Level for the logging (trace,debug,warning,info,fatal)")
+	rootCmd.PersistentFlags().StringP("verbose", "v", "info", "Level for the logging (trace,debug,warning,info,fatal)")
+  rootCmd.PersistentFlags().StringP("logfmt", "l", "text", "Format of the log output (text,json)")
+  rootCmd.PersistentFlags().Bool("is_cluster", true, "Make an application part of the cluster")
+  rootCmd.PersistentFlags().Bool("is_status", true, "Start embedded cluster/network status server")
+  rootCmd.PersistentFlags().StringP("name", "n", hostname, "Instance name")
+  rootCmd.PersistentFlags().UIntP("number", "u", 0, "Instance number")
+  viper.BindPFlag("is_cluster", rootCmd.PersistentFlags().Lookup("is_cluster"))
+  viper.BindPFlag("is_status", rootCmd.PersistentFlags().Lookup("is_status"))
+  viper.BindPFlag("name", rootCmd.PersistentFlags().Lookup("name"))
+  viper.BindPFlag("number", rootCmd.PersistentFlags().Lookup("number"))
+
+
 
 }
 

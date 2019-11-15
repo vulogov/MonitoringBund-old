@@ -11,35 +11,11 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:0ec614bb3b9eb0b5717fe82b51dc9cc16d7de861ab73affe1c06d1c75a3c8534"
-  name = "github.com/armon/circbuf"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "5111143e8da2e98b4ea6a8f32b9065ea1821c191"
-
-[[projects]]
-  branch = "master"
   digest = "1:7a9140c806333a78122763d08ec6c0d7358c7fff1df8cfbb01881c5dc46e24e5"
   name = "github.com/armon/go-metrics"
   packages = ["."]
   pruneopts = "UT"
   revision = "ec5e00d3c878b2a97bbe0884ef45ffd1b4f669f5"
-
-[[projects]]
-  digest = "1:c47f4964978e211c6e566596ec6246c329912ea92e9bb99c00798bb4564c5b09"
-  name = "github.com/armon/go-radix"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "1a2de0c21c94309923825da3df33a4381872c795"
-  version = "v1.0.0"
-
-[[projects]]
-  digest = "1:1343a2963481a305ca4d051e84bc2abd16b601ee22ed324f8d605de1adb291b0"
-  name = "github.com/bgentry/speakeasy"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "4aabc24848ce5fd31929f7d1e4ea74d3709c14cd"
-  version = "v0.1.0"
 
 [[projects]]
   digest = "1:5f80f31b983ad0f7dc869fe1b5107e6dd5d39227ace0336e092f8511725dd928"
@@ -56,14 +32,6 @@
   packages = ["."]
   pruneopts = "UT"
   revision = "67e0ed34491ae997c83c5aa2a1cae2cfd4b4ac41"
-
-[[projects]]
-  digest = "1:865079840386857c809b72ce300be7580cb50d3d3129ce11bf9aa6ca2bc1934a"
-  name = "github.com/fatih/color"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "5b77d2a35fb0ede96d138fc9a99f5c9b6aef11b4"
-  version = "v1.7.0"
 
 [[projects]]
   digest = "1:abeb38ade3f32a92943e5be54f55ed6d6e3b6602761d74b4aab4c9dd45c18abd"
@@ -141,14 +109,6 @@
   version = "v1.0.2"
 
 [[projects]]
-  digest = "1:0a48cb9c2757781932550a45ad11dd497722d4018a28077de65674aec7eee90e"
-  name = "github.com/hashicorp/go-syslog"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "8d1874e3e8d1862b74e0536851e218c4571066a5"
-  version = "v1.0.0"
-
-[[projects]]
   digest = "1:f14364057165381ea296e49f8870a9ffce2b8a95e34d6ae06c759106aaef428c"
   name = "github.com/hashicorp/go-uuid"
   packages = ["."]
@@ -184,22 +144,6 @@
   version = "v1.0.0"
 
 [[projects]]
-  digest = "1:16ae35b3a854c667baaf55ff5d455c486f7c2baf040a2727f2ef0e4b096b2a95"
-  name = "github.com/hashicorp/logutils"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "a335183dfd075f638afcc820c90591ca3c97eba6"
-  version = "v1.0.0"
-
-[[projects]]
-  digest = "1:89d41e902c8415f538d75e9d3008b286d30fe853ccf32def2dd37b82dd2ade14"
-  name = "github.com/hashicorp/mdns"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "06dd1a31b32c42d4d6c2cf8dbce70597d1118f54"
-  version = "v1.0.1"
-
-[[projects]]
   digest = "1:08ff8f64cc32d2bf06d0e09daf9b3bde7375e2d9e361b081a3faa405de3292a5"
   name = "github.com/hashicorp/memberlist"
   packages = ["."]
@@ -208,13 +152,9 @@
   version = "v0.1.5"
 
 [[projects]]
-  digest = "1:5dc738f1855d682b713582e3cb40d90edfe2fa030a7b77188946af0538514788"
+  digest = "1:81d931742476763380abc33b870c03b7e6079a94ddeb252ae2123cbc1874ae3b"
   name = "github.com/hashicorp/serf"
   packages = [
-    ".",
-    "client",
-    "command",
-    "command/agent",
     "coordinate",
     "serf",
   ]
@@ -223,12 +163,36 @@
   version = "v0.7.0"
 
 [[projects]]
+  digest = "1:c00cc6d95a674b4b923ac069d364445043bc67836e9bd8aeff8440cfbe6a2cc7"
+  name = "github.com/huin/goupnp"
+  packages = [
+    ".",
+    "dcps/internetgateway1",
+    "dcps/internetgateway2",
+    "httpu",
+    "scpd",
+    "soap",
+    "ssdp",
+  ]
+  pruneopts = "UT"
+  revision = "656e61dfadd241c7cbdd22a023fa81ecb6860ea8"
+  version = "v1.0.0"
+
+[[projects]]
   digest = "1:870d441fe217b8e689d7949fef6e43efbc787e50f200cb1e70dbca9204a1d6be"
   name = "github.com/inconshreveable/mousetrap"
   packages = ["."]
   pruneopts = "UT"
   revision = "76626ae9c91c4f2a10f34cad8ce83ea42c93bb75"
   version = "v1.0"
+
+[[projects]]
+  digest = "1:32b82e71cf24f8b78323e0d7903c4b90278486283965aa2a19b1ea13763b8f34"
+  name = "github.com/jackpal/go-nat-pmp"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "c9cfead9f2a36ddf3daa40ba269aa7f4bbba6b62"
+  version = "v1.0.1"
 
 [[projects]]
   branch = "master"
@@ -255,22 +219,6 @@
   version = "v1.8.1"
 
 [[projects]]
-  digest = "1:c658e84ad3916da105a761660dcaeb01e63416c8ec7bc62256a9b411a05fcd67"
-  name = "github.com/mattn/go-colorable"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "167de6bfdfba052fa6b2d3664c8f5272e23c9072"
-  version = "v0.0.9"
-
-[[projects]]
-  digest = "1:d62282425ffb75047679d7e2c3b980eea7f82c05ef5fb9142ee617ebac6e7432"
-  name = "github.com/mattn/go-isatty"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "88ba11cfdc67c7588b30042edf244b2875f892b6"
-  version = "v0.0.10"
-
-[[projects]]
   digest = "1:cd0ca4e3bd8a8b2d11f65fdeca5a4a2f74111d8f80db9664d549c48ada7c5662"
   name = "github.com/mattn/go-runewidth"
   packages = ["."]
@@ -285,14 +233,6 @@
   pruneopts = "UT"
   revision = "1e224ff5dead8366ed6fcdcb832794be42e73f0e"
   version = "v1.1.22"
-
-[[projects]]
-  digest = "1:dac0667a3fcdd4102a5da07abeddc89eb2f125b1e91af1ea9544c80eaff19c9a"
-  name = "github.com/mitchellh/cli"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "3d22a244be8aa6fb16ac24af0e195c08b7d973aa"
-  version = "v1.0.0"
 
 [[projects]]
   branch = "master"
@@ -327,6 +267,23 @@
   version = "v1.5.0"
 
 [[projects]]
+  digest = "1:5294f317ccc9cfb81212e2039a98987da9e426ef12c638f76508177e5e231876"
+  name = "github.com/perlin-network/noise"
+  packages = [
+    ".",
+    "callbacks",
+    "identity",
+    "internal/bufconn",
+    "log",
+    "nat",
+    "payload",
+    "transport",
+  ]
+  pruneopts = "UT"
+  revision = "3c13535b725d786f2d649e256c5383d49bb9c868"
+  version = "v2.0.0"
+
+[[projects]]
   branch = "master"
   digest = "1:89da0f0574bc94cfd0ac8b59af67bf76cdd110d503df2721006b9f0492394333"
   name = "github.com/petar/GoLLRB"
@@ -351,24 +308,24 @@
   version = "v1.0.0"
 
 [[projects]]
-  digest = "1:501dea7fe37f7b9a45babc8a871cf645e94486b50ce48e25d2cb6fbdf2715b02"
-  name = "github.com/posener/complete"
-  packages = [
-    ".",
-    "cmd",
-    "cmd/install",
-  ]
-  pruneopts = "UT"
-  revision = "98a0c28ec7908620d626d072df3a49c34eadc2b6"
-  version = "v1.2.2"
-
-[[projects]]
-  digest = "1:4a0ab26712dc866a15584f83a6004f447e692f69fdbcdfc61ea2f32836bd7065"
-  name = "github.com/ryanuber/columnize"
+  digest = "1:cf31692c14422fa27c83a05292eb5cbe0fb2775972e8f1f8446a71549bd8980b"
+  name = "github.com/pkg/errors"
   packages = ["."]
   pruneopts = "UT"
-  revision = "9e6335e58db3b4cfe3c3c5c881f51ffbc1091b34"
-  version = "v2.1.1"
+  revision = "ba968bfe8b2f7e042a574c888954fccecfa385b4"
+  version = "v0.8.1"
+
+[[projects]]
+  digest = "1:09e64bb459ade28b89f7d783b652cb25aacceab299faa018b3f4c7c970dc6975"
+  name = "github.com/rs/zerolog"
+  packages = [
+    ".",
+    "internal/cbor",
+    "internal/json",
+  ]
+  pruneopts = "UT"
+  revision = "b806a5ecbe5347ad9ef05121fea8f4acc65fa5fc"
+  version = "v1.15.0"
 
 [[projects]]
   digest = "1:0aa53a8af1dbab1db245d3117194bc355c7029daf1dc0e1e35fbc9174c6d1144"
@@ -498,21 +455,25 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:cd7e85fc3687e062714febdee3e8efeb00a413a2a620d28908fd0258261d2353"
+  digest = "1:412617dfb5e9b6070dec2497471ca36c6f114f91bb5391d13f3cf1b0304ffc2c"
   name = "golang.org/x/crypto"
   packages = [
     "ed25519",
     "ed25519/internal/edwards25519",
+    "ssh/terminal",
   ]
   pruneopts = "UT"
   revision = "87dc89f01550277dc22b74ffcf4cd89fa2f40f4c"
 
 [[projects]]
   branch = "master"
-  digest = "1:9bebe5fbfe7c6e76a69ccca43408185b3a9cced66e9e4c9b9811e81a2355789d"
+  digest = "1:6d8171ff5cf625247ba5d7ec3ff008c920787923f1d9b0292e4e15ce127a9eaf"
   name = "golang.org/x/net"
   packages = [
     "bpf",
+    "html",
+    "html/atom",
+    "html/charset",
     "internal/iana",
     "internal/socket",
     "ipv4",
@@ -533,12 +494,28 @@
   revision = "6c3a3bfe00aeca2b8685f04a482824367e7d2135"
 
 [[projects]]
-  digest = "1:1093f2eb4b344996604f7d8b29a16c5b22ab9e1b25652140d3fede39f640d5cd"
+  digest = "1:7570a3e4daa14b7627089e77ad8c714f5f36b4cf1b7dfd8510df7d6935dc42a0"
   name = "golang.org/x/text"
   packages = [
+    "encoding",
+    "encoding/charmap",
+    "encoding/htmlindex",
+    "encoding/internal",
+    "encoding/internal/identifier",
+    "encoding/japanese",
+    "encoding/korean",
+    "encoding/simplifiedchinese",
+    "encoding/traditionalchinese",
+    "encoding/unicode",
     "internal/gen",
+    "internal/language",
+    "internal/language/compact",
+    "internal/tag",
     "internal/triegen",
     "internal/ucd",
+    "internal/utf8internal",
+    "language",
+    "runes",
     "transform",
     "unicode/cldr",
     "unicode/norm",
@@ -565,10 +542,10 @@
     "github.com/glycerine/zygomys",
     "github.com/hashicorp/go-uuid",
     "github.com/hashicorp/memberlist",
-    "github.com/hashicorp/serf",
     "github.com/hashicorp/serf/serf",
     "github.com/logrusorgru/aurora",
     "github.com/mitchellh/go-homedir",
+    "github.com/perlin-network/noise",
     "github.com/schollz/progressbar",
     "github.com/spf13/cobra",
     "github.com/spf13/viper",

@@ -75,3 +75,7 @@ required = [
 [[constraint]]
   name = "github.com/hashicorp/serf"
   version = "0.7.0"
+
+[[constraint]]
+  name = "github.com/perlin-network/noise"
+  version = "2.0.0"
